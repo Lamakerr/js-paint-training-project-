@@ -1,0 +1,179 @@
+html {
+    background: url(img/wdfonjpg.jpg);
+    color: aliceblue;
+}
+header {
+
+    text-align: center;
+    font-family: Verdana;
+    background: rgba(0, 0, 0, 0.288); 
+}
+
+.content {
+    width: 800px;
+    height: 800px;
+    
+}
+
+footer {
+    border-top: 2px solid black;
+    text-align: center;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.288);
+    height: 40px;   
+   
+}
+
+.select-1{
+    position: relative;
+    
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 100px;
+    height: 25px;
+}
+.selected-1{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.option-list-1{
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: -1px;
+
+    width: 100%;
+    border: 1px solid rgb(33, 21, 77);
+    background: rgba(14, 0, 0, 0.5);
+    z-index: 2;
+}
+
+
+.option-1{
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+}
+.option-1:hover{
+    background: #fff;
+}
+
+.select-2{
+    position: relative;
+    
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 100px;
+    height: 25px;
+}
+.selected-2{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.option-list-2{
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: -1px;
+
+    width: 100%;
+    border: 1px solid rgb(33, 21, 77);
+    background: rgba(14, 0, 0, 0.5);
+    z-index: 2;
+}
+
+
+.option-2{
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+}
+.option-2:hover{
+    background: #fff;
+}
+
+.paint-palette { 
+
+    width: 370px;
+    height: 800px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.288);
+    border-radius: 50px;
+    padding: 3px;
+}
+
+.paint-palette .colors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 30px;
+}
+
+.paint-palette .colors .color {
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+    border: 2px solid rgb(19, 19, 19);
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+
+.canvas {
+
+    box-shadow: 0 0 40px rgb(22, 22, 22);
+    width: 1400px;
+    height: 700px;
+    margin-left: 400px;
+    margin-top: 40px;
+    cursor: url(img/cursors/black-outline-paint-brush-flip-vertical-32.png),auto;
+}
+
+.paint-items {
+    text-align: center;
+    width: 1400px;
+    height: 91px;
+    position: relative;
+    margin-bottom: 60px;
+    margin-left: 400px;
+    margin-top: 10px;
+    
+}
+
+.paint-items .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 70px;
+}
+
+.paint-items .items .item {
+    margin: 10px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px rgb(143, 140, 140);
+    border-radius: 10px;
+    cursor:pointer;
+    background-image: linear-gradient(to right, #0e2b6d 0%, #191f2b 51%, #0a142b 100%);
+
+}
+
+.paint-items .items .item .ico1 {
+    background: url(img/ico1.png);
+}
+
+.paint-items .items .item:hover {
+    background-position: right center;
+}
+
+.footer-text {
+    font-size: 12pt;
+    font-family: Verdana;
+    margin: 5px;
+}

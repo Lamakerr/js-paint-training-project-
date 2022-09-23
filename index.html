@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paint</title>
+</head>
+
+<body>
+    <header>
+        <h1>PAINT-CANVAS-JS</h1>
+    </header>
+    
+    <div class="content">
+        <div class="paint-palette">
+            <div id="colors" class="colors"></div>
+        </div>
+        <div class="canvas">
+            <canvas width="1400" height="700" id="canvas"></canvas>
+        </div>
+        <div class="paint-items">
+           Инструменты
+            <div class="items">
+    
+                <div class="item">
+                    <div class="select-1">
+                        <input type="hidden" name="item-1" value="1">
+                        <div class="selected-1">Вид кисти</div>
+                        <div class="option-list-1">
+                            <div class="option-1" data-select-val="1">Квадратная</div>
+                            <div class="option-1" data-select-val="2"> Круглая</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="select-2">
+                        <input type="hidden" name="item" value="1">
+                        <div class="selected-2">Размер кисти</div>
+                        <div class="option-list-2">
+                            <div class="option-2" data-select-val="1">Маленькая</div>
+                            <div class="option-2" data-select-val="2">Средняя</div>
+                            <div class="option-2" data-select-val="3">Большая</div>
+                            <div class="option-2" data-select-val="4">Огромная</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="cleaner" class="item">Стерка</button>
+                <button id="clear" class="item">Очистить все</button>
+                <button class="item" id="saveFile">Сохранить</button>
+                <button class="item" id='text'> Текст</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-text">
+            Все права защищены. 2022 || telegram[@rkertini]/gitHub[Lamakerr]
+        </div>
+    </footer>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
